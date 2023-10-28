@@ -14,8 +14,8 @@
         <property name="classesName" type="string">
             <column name="Classes_Name" length="45" not-null="true" />
         </property>
-        <property name="duration" type="time">
-            <column name="Duration" length="8" not-null="true" />
+        <property name="duration" type="string">
+            <column name="Duration" length="255" not-null="true" />
         </property>
         <property name="slots" type="int">
             <column name="Slots" not-null="true" />

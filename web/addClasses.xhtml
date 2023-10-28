@@ -101,25 +101,32 @@
               ADD CLASS FORM
             </h2>
             <h:form>
-              <div class="inikasir row">
+                              <div class="inikasir row">
+                <div class="d-grid col-sm-6">
+                  <label class="form-label">ID Classes</label>
+                </div>
+                <div class="d-grid col-sm-6">
+                <h:inputText class="form-control" value="#{addClassesDTO.idClasses}" />
+                </div>
+              </div>
+              <br />
+                              <div class="inikasir row">
                 <div class="d-grid col-sm-6">
                   <label class="form-label">Exercise</label>
                 </div>
                 <div class="d-grid col-sm-6">
-                  <h:inputText
-                    class="form-control"
-                    value="#{classes.exercise}"
-                  />
+                <h:inputText class="form-control" value="#{addClassesDTO.idExercise}" />
                 </div>
               </div>
               <br />
+    
 
               <div class="inikasir row">
                 <div class="d-grid col-sm-6">
                   <label class="form-label">Class Name</label>
                 </div>
                 <div class="d-grid col-sm-6">
-                    <h:inputText class="form-control" value="#{classes.classesName}" />
+                    <h:inputText class="form-control" value="#{addClassesDTO.classesName}" />
                 </div>
               </div>
               <br />
@@ -127,12 +134,11 @@
               <div class="inikasir row">
                 <div class="d-grid col-sm-6">
                   <label class="form-label">Duration</label>
+                  
                 </div>
                 <div class="d-grid col-sm-6">
-                  <h:inputText
-                    class="form-control"
-                    value="#{classes.duration}"
-                  />
+                               <h:inputText class="form-control" value="#{addClassesDTO.duration}" />
+
                 </div>
               </div>
               <br />
@@ -142,7 +148,17 @@
                   <label class="form-label">Slots</label>
                 </div>
                 <div class="d-grid col-sm-6">
-                    <h:inputText class="form-control" value="#{classes.slots}" />
+                    <h:inputText class="form-control" value="#{addClassesDTO.slots}" />
+                </div>
+              </div>
+              <br />
+              
+              <div class="inikasir row">
+                <div class="d-grid col-sm-6">
+                  <label class="form-label">Images</label>
+                </div>
+                <div class="d-grid col-sm-6">
+                    <h:inputText class="form-control" value="#{addClassesDTO.images}" />
                 </div>
               </div>
               <br />
@@ -153,10 +169,10 @@
               <div class="row">
                 <div class="d-grid col-sm-6 tombolloginku">
                   <h:commandButton
-                    value="ADD"
-                    class="btncari"
-                    action="#{classes.savedata()}"
-                  />
+        value="ADD"
+        class="btncari"
+        action="#{classesService.savedata(addClassesDTO)}"
+    />
                 </div>
               </div>
             </h:form>
