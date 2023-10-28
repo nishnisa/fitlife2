@@ -1,0 +1,72 @@
+# Compiled Java class files
+*.class
+
+# NetBeans-specific files and directories
+/nbproject/private/
+/nb-configuration.xml
+/.nb-gradle/
+
+# Visual Studio Code-specific files and directories
+.vscode/
+
+# Maven-specific files and directories
+/target/
+/.mvn/
+
+# Eclipse-specific files and directories
+.settings/
+.project
+.classpath
+.cache
+*.launch
+*.recommenders
+
+# Build artifacts
+/build/
+/bin/
+/classes/
+/out/
+
+# Logs and runtime files
+*.log
+*.log.*
+*.tmp
+*.swp
+*.jar
+*.war
+
+# IDE-specific files and directories
+/.idea/
+/.project/
+/.classpath/
+/.settings/
+/.metadata/
+.DS_Store
+Thumbs.db
+
+# Node.js dependencies (for JavaScript or TypeScript development)
+node_modules/
+
+# Compiled JavaScript or TypeScript files (if applicable)
+*.js
+*.js.map
+
+# Maven wrapper files
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+
+# Gradle wrapper files
+gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties
+
+# Application server-specific files and directories (e.g., Tomcat, Wildfly)
+/tomcat/
+/wildfly/
+/jboss/
+/glassfish/
+
+# Database files (e.g., H2, Derby, or other embedded databases)
+*.h2.db
+*.mv.db
+*.hsqldb
+*.derby.log
